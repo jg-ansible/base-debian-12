@@ -6,19 +6,19 @@
 - name: Ensure basic packages are installed
   apt:
     name:
-      - ufw
-      - gnupg
-      - htop
-      - vim
-      - neovim
+      - ansible
       - apt-transport-https
       - ca-certificates
-      - nginx
-      - zsh
       - curl
-      - lsb-release
-      - wget
       - gnupg
-      - gpg
+      - htop
       - jq
+      - lsb-release
+      - neovim
+      - nginx
+      - qemu-guest-agent
+      - ufw
+      - vim
+      - wget
+      - zsh
     state: present
