@@ -11,8 +11,9 @@
   community.general.ufw:
     rule: "{{ item.policy }}"
     port: "{{ item.port }}"
+    proto: "{{ item.protocol }}"
   loop: "{{ firewall_rules }}"
 
 - name: Restart UFW
   community.general.ufw:
-    state: reloaded
+    state: reloaded``
