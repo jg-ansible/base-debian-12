@@ -6,31 +6,31 @@ services:
 firewall_rules:
   - name: "SSH"
     port: 22
-    proto: "tcp"
+    protocol: "tcp"
     policy: allow
   # Web and management
   - name: "HTTP"
     port: 80
-    proto: "tcp"
+    protocol: "tcp"
     policy: allow
   - name: "HTTPS"
     port: 443
-    proto: "tcp"
+    protocol: "tcp"
     policy: allow
   - name: "Cockpit"
     port: 9090
-    proto: "tcp"
+    protocolfpro: "tcp"
     policy: allow
   # Filesystems
   - name: "SMB"
     port: 445
-    proto: "tcp"
+    protocol: "tcp"
     policy: allow
   - name: "NFS"
     port: 111
-    proto: "tcp"
+    protocol: "tcp"
     policy: allow
   - name: "NFS"
     port: 2049
-    proto: "tcp"
+    protocol: "tcp"
     policy: allow
