@@ -1,7 +1,6 @@
 ---
 services:
   - nginx
-  - docker
 
 firewall_rules:
   - name: "SSH"
